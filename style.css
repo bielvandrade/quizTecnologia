@@ -1,0 +1,260 @@
+body {
+
+    margin: 0;
+
+    background-image: url("imagens/fundo-site.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.container {
+
+    width: 460px;
+    margin:500px;
+    margin-top: 150px;
+    max-width: 90%;
+
+    background-color: #ab5e40;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+
+    text-align: center;
+}
+
+#painelInfo {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 15px;
+}
+
+#contadorPergunta,
+#cronometro {
+
+    flex: 1;
+
+    background-color: rgba(0,0,0,0.2);
+
+    padding: 10px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+}
+
+#barraContainer {
+
+    width: 100%;
+
+    height: 20px;
+
+    background-color: #64748b;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    margin-bottom: 20px;
+}
+
+#barraProgresso {
+
+    width: 0%;
+
+    height: 100%;
+
+    background-color: #00ffd5;
+
+    transition: 0.5s;
+}
+
+button {
+
+    width: 100%;
+
+    padding: 15px;
+
+    margin: 10px 0;
+
+    font-size: 18px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+button:hover {
+
+    transform: scale(1.02);
+}
+
+#relatorioErros {
+
+    text-align: left;
+
+    max-height: 350px;
+
+    overflow-y: auto;
+
+    margin-top: 20px;
+}
+
+.erro {
+
+    background-color: rgba(0,0,0,0.2);
+
+    padding: 12px;
+
+    border-radius: 10px;
+
+    margin-bottom: 15px;
+}
+
+.erro h3 {
+
+    margin-top: 0;
+}
+
+.carrossel {
+
+    display: flex;
+
+    gap: 10px;
+
+    overflow-x: auto;
+
+    padding: 10px 0;
+
+    margin-top: 20px;
+}
+
+.card {
+
+    min-width: 120px;
+
+    padding: 15px;
+
+    background: rgba(0,0,0,0.25);
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+
+    transform: scale(1.05);
+
+    background: rgba(0,0,0,0.4);
+}
+
+#conteudoExtra {
+
+    margin-top: 20px;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    background: rgba(0,0,0,0.25);
+
+    text-align: left;
+
+    min-height: 150px;
+}
+#quizArea {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+#estudos {
+
+    min-height: 100vh;
+
+    padding: 80px;
+
+    background: rgba(0,0,0,0.6);
+
+    backdrop-filter: blur(5px);
+}
+
+#estudos h1 {
+
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+.carrossel {
+
+    display: flex;
+
+    gap: 15px;
+
+    overflow-x: auto;
+
+    padding: 20px 0;
+}
+
+.card {
+
+    min-width: 150px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    border-radius: 15px;
+
+    background: #ab5e40;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: .3s;
+}
+
+.card:hover {
+
+    transform: scale(1.05);
+}
+
+#conteudoExtra {
+
+    margin-top: 30px;
+
+    background: rgba(255,255,255,0.1);
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    min-height: 250px;
+}

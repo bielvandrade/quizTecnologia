@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Tecnologia do Conecta!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+    <!-- TELA INICIAL -->
+    <div id="telaInicial">
+
+        <h1>Quiz de Tecnologia do Conecta!</h1>
+
+        <p>Teste seus conhecimentos em tecnologia!</p>
+
+        <button onclick="iniciarQuiz()">
+            Iniciar Quiz
+        </button>
+
+    </div>
+
+    <!-- TELA DO QUIZ -->
+    <div id="telaQuiz" style="display:none;">
+
+        <div id="painelInfo">
+
+            <div id="contadorPergunta">
+                Pergunta 1 de 10
+            </div>
+
+            <div id="cronometro">
+                Tempo: 0s
+            </div>
+
+        </div>
+
+        <div id="barraContainer">
+            <div id="barraProgresso"></div>
+        </div>
+
+        <h2 id="pergunta"></h2>
+
+        <div id="alternativas"></div>
+
+    </div>
+
+    <!-- TELA FINAL -->
+    <div id="telaFinal" style="display:none;">
+
+        <h1>Quiz Finalizado!</h1>
+
+        <p id="resultado"></p>
+
+        <div id="relatorioErros"></div>
+
+        
+
+        <button onclick="reiniciarQuiz()">
+            Jogar Novamente
+        </button>
+
+    </div>
+
+
+</section>
+
+</div>
+<section id="estudos">
+
+    <h1>📚 Central de Estudos</h1>
+
+    <p>
+        Role os conteúdos abaixo para aprender mais sobre os temas do quiz.
+    </p>
+
+    <div class="carrossel">
+
+        <div class="card" onclick="mostrarConteudo(0)">
+            HTML
+        </div>
+
+        <div class="card" onclick="mostrarConteudo(1)">
+            CSS
+        </div>
+
+        <div class="card" onclick="mostrarConteudo(2)">
+            Windows
+        </div>
+
+        <div class="card" onclick="mostrarConteudo(3)">
+            Google Docs
+        </div>
+
+        <div class="card" onclick="mostrarConteudo(4)">
+            CPU
+        </div>
+
+        <div class="card" onclick="mostrarConteudo(5)">
+            JavaScript
+        </div>
+
+        <div class="card" onclick="mostrarConteudo(6)">
+            For
+        </div>
+
+        <div class="card" onclick="mostrarConteudo(7)">
+            Android
+        </div>
+
+        <div class="card" onclick="mostrarConteudo(8)">
+            Print()
+        </div>
+
+        <div class="card" onclick="mostrarConteudo(9)">
+            Programação
+        </div>
+
+    </div>
+
+    <div id="conteudoExtra">
+
+        <h2>Selecione um tema acima</h2>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
